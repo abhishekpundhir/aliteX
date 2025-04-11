@@ -2,6 +2,7 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const Listing = require("./models/listing")
+const ejsMate = require("ejs-mate")
 const methodOverride = require("method-override")
 const path = require("path")
 const app = express()
@@ -9,8 +10,11 @@ const app = express()
 // APP SET And USE Statements 
 app.set("view engine","ejs")
 app.set("views",path.join(__dirname,"views"))
+app.engine("ejs", ejsMate);
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride("_method"));
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static("public"));
 
 const mongoURL = "mongodb://127.0.0.1:27017/alitex"; // Mongoose URL 
 // Main Function to Connect with DataBase

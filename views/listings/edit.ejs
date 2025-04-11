@@ -1,19 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>AliteX</title>
-</head>
+<% layout("/layouts/boilerplate") -%>
 <body>
-    <h3>Edit Listing</h3>
+    <center><h3 class="m32">Edit Listing</h3></center>
+
+    <div class="bd">
+
+   
+    <div class="card">
+        <a class="listing-link" href="/listings/<%= listing._id %>"> <div class="card cal" >
+            <img src="<%= listing.image.url %>" class=" card-img-top" alt="listing image" style="height: 20rem;">
+            <div class="card-img-overlay"></div>
+            <div class="card-body">
+              <p class="card-text">
+               <b> <%= listing.title %> </b><br>
+                &#8377; <%= listing.price.toLocaleString("en-in") %>/Night <br>
+        
+              </p>
+            </div>
+          </div></a>
+    </div>
+    <div class="width-form">
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
-        <input name="listing[title]" type="text" value="<%= listing.title %>" placeholder="Enter Title"> <br>
-        <textarea name="listing[description]" placeholder="Enter Description"><%= listing.description %></textarea> <br>
-        <input name="listing[image]" type="text" value="<%= listing.image %>" placeholder="Enter Image URL"> <br>
-        <input name="listing[price]" type="number" value="<%= listing.price %>" placeholder="Enter Price"> <br>
-        <input name="listing[country]" type="text" value="<%= listing.country %>" placeholder="Enter Country"> <br>
-        <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Enter Location"> <br>
-        <button type="submit">Update</button>
+            <input name="listing[title]" type="text" value="<%= listing.title %>" placeholder="Enter Title" class="form-control"> <br>
+            <textarea name="listing[description]" placeholder="Enter Description" class="form-control"><%= listing.description %></textarea> <br>
+        <input name="listing[image][url]" type="text" value="<%= listing.image %>" placeholder="Enter Image URL" class="form-control"> <br>
+        <input name="listing[price]" type="number" value="<%= listing.price %>" placeholder="Enter Price" class="form-control"> <br>
+        <input name="listing[country]" type="text" value="<%= listing.country %>" placeholder="Enter Country" class="form-control"> <br>
+        <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Enter Location" class="form-control"> <br>
+        <button type="submit" class="button">Update</button>
     </form>
+</div>
+</div>
 </body>
-</html>
+
