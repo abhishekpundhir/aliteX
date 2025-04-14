@@ -1,36 +1,41 @@
 <% layout("/layouts/boilerplate") -%>
 <body>
-   <center><h3 class="m32">Create New Listing</h3></center> 
+   <center><h3 class="m32">Place Order</h3></center> 
     <form method="POST" action="/listings">
         <div>
           <!-- <label for="title" class="form-lable">Title</label> -->
-        <input name="listing[title]" type="text"  placeholder="Enter Title" class="form-control"> <br>
+        <input name="listing[title]" type="text"  placeholder="Enter Name" class="form-control"> <br>
         </div>
        
+
+    
+
+        <div>
+            <!-- <label for="price" class="form-lable">Price</label> -->
+            <input name="listing[price]" type="text"  placeholder="Market Price" class="form-control"> <br>
+        </div>
+
+        <div>
+            <!-- <label for="country" class="form-lable">Country</label> -->
+            <input name="listing[country]" type="text"  placeholder="Quantity" class="form-control"> <br>
+        </div>
+
+        <div>
+            <!-- <label for="location" class="form-lable">Location</label> -->
+            <input name="listing[location]" type="text"  placeholder="Days" class="form-control"> <br>
+        </div>
+
+        <div>
+            <!-- <label for="description" class="form-lable">Description</label> -->
+            <textarea name="listing[description]" placeholder="Enter Specifications" class="form-control"></textarea> <br>
+        </div>
 
         <div>
             <!-- <label for="image" class="form-lable">Image</label> -->
             <input name="listing[image][url]" placeholder="Image URL"  class="form-control"> <br>
         </div>
 
-        <div>
-            <!-- <label for="price" class="form-lable">Price</label> -->
-            <input name="listing[price]" type="text"  placeholder="Price" class="form-control"> <br>
-        </div>
 
-        <div>
-            <!-- <label for="country" class="form-lable">Country</label> -->
-            <input name="listing[country]" type="text"  placeholder="Country" class="form-control"> <br>
-        </div>
-
-        <div>
-            <!-- <label for="location" class="form-lable">Location</label> -->
-            <input name="listing[location]" type="text"  placeholder="Location" class="form-control"> <br>
-        </div>
-        <div>
-            <!-- <label for="description" class="form-lable">Description</label> -->
-            <textarea name="listing[description]" placeholder="Enter Description" class="form-control"></textarea> <br>
-        </div>
      <button type="submit" class="button">Create</button>
     </form>
 </body>

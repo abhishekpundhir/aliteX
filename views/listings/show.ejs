@@ -7,8 +7,8 @@
     <ul>
        <li><b style="font-size: 2rem;" class="text-none"><%= listing.title%> </b></li> <br>
        <li><b> &#8377;  <%= listing.price.toLocaleString("en-GB", { timeZone: "UTC" })%></b></li> <br>
-       <li><b> <%= listing.location%></b></li><br>
-       <li><b><%= listing.country%></b> </li><br>
+       <!-- <li><b> <%= listing.location%></b></li><br>
+       <li><b><%= listing.country%></b> </li><br> -->
        <li><%= listing.description%></li><br>
     </ul>
 </div>
@@ -20,9 +20,9 @@
 
 
     <div class="btn">
-        <a href="/listings/<%=listing._id %>/edit" class="btn btn-outline-primary">Edit</a><br><br>
+        <a href="/listings/<%=listing._id %>/edit" class="btn btn-outline-primary">Custom Order</a><br><br>
     <form action="/listings/<%= listing._id %>?_method=DELETE" method="POST">
-        <button class="btn btn-outline-danger">Delete</button>
+        <button class="btn btn-outline-danger">Rent</button>
     </form>
     </div>
        

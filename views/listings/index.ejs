@@ -1,20 +1,19 @@
 <% layout("/layouts/boilerplate") -%>
 <body>
-  <h1>All AliteX Listings</h1>
+  <!-- <h1>All AliteX Listings</h1> -->
 
-<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+<div class=" row row-cols-lg-3 row-cols-md-2 row-cols-sm-1  mxx " id="mxx">
   <% for (let listing of allListings) { %>
-    <a class="listing-link" href="/listings/<%= listing._id %>"> <div class="card cal" >
+    <a class="listing-link" href="/listings/<%= listing._id %>"> <div class="x-shadow card cal" >
     <img src="<%= listing.image.url %>" class=" card-img-top" alt="listing image" style="height: 20rem;">
     <div class="card-img-overlay"></div>
     <div class="card-body">
-      <p class="card-text">
+     <center> <p class="card-text">
        <b> <%= listing.title %> </b><br>
-        &#8377; <%= listing.price.toLocaleString("en-in") %>/Night <br>
-        <%= listing.title %> <br>
-        <%= listing.title %> <br> 
+        &#8377; <%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %>/Day <br>
+        
 
-      </p>
+      </p></center>
     </div>
   </div></a>
  

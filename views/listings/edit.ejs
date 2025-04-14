@@ -1,6 +1,6 @@
 <% layout("/layouts/boilerplate") -%>
 <body>
-    <center><h3 class="m32">Edit Listing</h3></center>
+    <center><h3 class="m32">Custom Order</h3></center>
 
     <div class="bd">
 
@@ -21,11 +21,13 @@
     <div class="width-form">
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
             <input name="listing[title]" type="text" value="<%= listing.title %>" placeholder="Enter Title" class="form-control"> <br>
-            <textarea name="listing[description]" placeholder="Enter Description" class="form-control"><%= listing.description %></textarea> <br>
+            <input name="listing[price]" type="number" value="<%= listing.price %>" placeholder="Enter Price" class="form-control"> <br>
+            <!-- <input name="listing[country]" type="text" value="<%= listing.country %>" placeholder="Days" class="form-control"> <br> -->
+            <!-- <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Quantity" class="form-control"> <br> -->
+            <!-- <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Enter Delivery Date" class="form-control"> <br> -->
+
+            <textarea name="listing[description]" placeholder="Enter Specifications" class="form-control"><%= listing.description %></textarea> <br>
         <input name="listing[image][url]" type="text" value="<%= listing.image %>" placeholder="Enter Image URL" class="form-control"> <br>
-        <input name="listing[price]" type="number" value="<%= listing.price %>" placeholder="Enter Price" class="form-control"> <br>
-        <input name="listing[country]" type="text" value="<%= listing.country %>" placeholder="Enter Country" class="form-control"> <br>
-        <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Enter Location" class="form-control"> <br>
         <button type="submit" class="button">Update</button>
     </form>
 </div>

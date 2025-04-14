@@ -127,7 +127,9 @@ body{
     margin: 22px;
 }
 
-
+#mxx{
+    margin: 15px;
+}
 
 
 .container-img {
@@ -154,3 +156,7 @@ div.btn{
 .text-none{
 text-decoration: none;
 }
+
+/* .x-shadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+} */
