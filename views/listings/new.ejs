@@ -1,39 +1,75 @@
 <% layout("/layouts/boilerplate") -%>
 <body>
    <center><h3 class="m32">Place Order</h3></center> 
-    <form method="POST" action="/listings">
+    <form method="POST" action="/listings" novalidate class="needs-validation"   >
         <div>
           <!-- <label for="title" class="form-lable">Title</label> -->
-        <input name="listing[title]" type="text"  placeholder="Enter Name" class="form-control"> <br>
-        </div>
+        <input name="listing[title]" type="text"  placeholder="Enter Name" class="form-control" required>
+        <div class="invalid-feedback">
+            I Think App Kuch bhul Rahe Ho! 
+          </div>
+          <div class="valid-feedback">
+            Title Mast hei !
+          </div>
+        </div> <br>
        
 
     
 
         <div>
             <!-- <label for="price" class="form-lable">Price</label> -->
-            <input name="listing[price]" type="text"  placeholder="Market Price" class="form-control"> <br>
-        </div>
+            <input name="listing[price]" type="text"  placeholder="Market Price" class="form-control" required>
+            <div class="invalid-feedback">
+                Hmm! Product Free Hie Shayad ? 
+              </div>
+              <div class="valid-feedback">
+                Ameer Logzzzz!
+              </div>
+        </div> <br>
 
         <div>
             <!-- <label for="country" class="form-lable">Country</label> -->
-            <input name="listing[country]" type="text"  placeholder="Quantity" class="form-control"> <br>
-        </div>
+            <input name="listing[country]" type="text"  placeholder="Quantity" class="form-control" required> 
+            <div class="invalid-feedback">
+                Apko ek bee drone nii chaiye shayad !
+              </div>
+              <div class="valid-feedback">
+                OOh! Ho Jayega !  
+              </div>
+        </div> <br>
 
         <div>
             <!-- <label for="location" class="form-lable">Location</label> -->
-            <input name="listing[location]" type="text"  placeholder="Days" class="form-control"> <br>
-        </div>
+            <input name="listing[location]" type="text"  placeholder="Days" class="form-control" required> 
+            <div class="invalid-feedback">
+                Ye to batate Jao Kitne din k Liye chaiye ? 
+              </div>
+              <div class="valid-feedback">
+                Acha! theek hie! 
+              </div>
+        </div> <br>
 
         <div>
             <!-- <label for="description" class="form-lable">Description</label> -->
-            <textarea name="listing[description]" placeholder="Enter Specifications" class="form-control"></textarea> <br>
-        </div>
+            <textarea name="listing[description]" placeholder="Enter Specifications" class="form-control" required></textarea> 
+            <div class="invalid-feedback">
+                Hmm! chalo ab ye bee bata hee do kee kya kya chaiye drone main ?
+              </div>
+              <div class="valid-feedback">
+                Mill Jayega Don't Worry
+              </div>
+        </div> <br>
 
         <div>
             <!-- <label for="image" class="form-lable">Image</label> -->
-            <input name="listing[image][url]" placeholder="Image URL"  class="form-control"> <br>
-        </div>
+            <input name="listing[image][url]" placeholder="Image URL"  class="form-control"  required> 
+            <div class="invalid-feedback">
+                Link to dete jayia muje ni pata wo kesa dihkta h ?  
+              </div>
+              <div class="valid-feedback">
+                ye Mujper chod do !
+              </div>
+        </div> <br>
 
 
      <button type="submit" class="button">Create</button>

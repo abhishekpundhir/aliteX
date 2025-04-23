@@ -1,349 +1,301 @@
 const sampleListings = [
     {
-      title: "Cozy Beachfront Cottage",
+      title: "SurveyMax 2.0",
       description:
-        "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
+        "Type: Surveillance Battery: 5200 mAh Flight Time: 30 mins Use: Urban planning, real estate",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/1a/05/bc/1a05bc3a2ec7133a446da830c1be06ee.jpg'",
       },
-      price: 1500,
+      price: 12000,
       location: "Malibu",
       country: "United States",
     },
     {
-      title: "Modern Loft in Downtown",
+      title: "Drone DJI Air 2S",
       description:
-        "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
+        "Camera: 20 MP, 1-inch CMOS sensor, 5.4K video at 30 fps, 4x digital zoom. Flight Time:Up to 31 minutes. Range: 12 km with OcuSync 3.0. Speed: Max 68 km/h. Safety:Obstacle detection in 4 directions (front, back, up, down). Features: MasterShots, ActiveTrack 4.0, Hyperlapse, and QuickShots. Applications:Ideal for photography, videography, real estate, and surveys. Extras:Includes remote controller, extra batteries, and carrying case. Disclaimer: Specifications may vary based on availability. Images are for representation purposes only.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://rentit4me.com/assets/frontend/images/listings/post-3199/64be62282f564.jpeg",
       },
-      price: 1200,
+      price: 12000,
       location: "New York City",
       country: "United States",
     },
     {
-      title: "Mountain Retreat",
+      title: "Drone DJI Air 2S with Smart Controller Remote",
       description:
-        "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
+        "Camera:20 MP, 1-inch CMOS sensor, 5.4K video at 30 fps, 4x digital zoom.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://rentit4me.com/assets/frontend/images/listings/post-3172/6752ac745556d.jpg",
       },
-      price: 1000,
+      price: 11000,
       location: "Aspen",
       country: "United States",
     },
     {
-      title: "Historic Villa in Tuscany",
+      title: "Drone Phantom 4 Pro",
       description:
-        "Experience the charm of Tuscany in this beautifully restored villa. Explore the rolling hills and vineyards.",
+        "Get ready to capture amazing shots with the Drone Phantom 4 Pro. This top-of-the-line drone is perfect for anyone who wants high-quality aerial photos and videos. It comes with a powerful camera that shoots clear 4K video and sharp 20MP photos.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/52/76/e4/5276e4f91f65bd3926bc619f97115b16.jpg",
       },
-      price: 2500,
+      price: 20500,
       location: "Florence",
       country: "Italy",
     },
     {
-      title: "Secluded Treehouse Getaway",
+      title: "Tactical Raven M5",
       description:
-        "Live among the treetops in this unique treehouse retreat. A true nature lover's paradise.",
+        "et high-quality thermal imaging at an affordable price with our thermal drone.  Perfect for professionals who need precise and reliable data, this drone is great for tasks like search and rescue, inspections, and monitoring. Key Features: Clear Thermal Camera:Captures detailed thermal images for accurate results. Advanced Technology:Works well in different lighting conditions. Easy to Use:Simple controls make it accessible for everyone. Affordable Rental:Top technology without the high cost of buying. Versatile Use:Ideal for various professional applications. Our thermal drone offers excellent value and performance. Rent it today for dependable, high-quality imaging at a budget-friendly rate.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://rentit4me.com/assets/frontend/images/listings/post-1050/643fd2ae644b5.jpeg",
       },
-      price: 800,
+      price: 11800,
       location: "Portland",
       country: "United States",
     },
     {
-      title: "Beachfront Paradise",
+      title: "DJI Phantom 4 Drone",
       description:
-        "Step out of your door onto the sandy beach. This beachfront condo offers the ultimate relaxation.",
+        "For camera additionally, one cheque of an amount equivalent to 50% MRP of the product needs to be shared. This will be collected at the time of delivery.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://cdn.rentickle.com/media/catalog/product/cache/1/thumbnail/1024x576/b58515f018eb873dafa430b6f9ae0c1e/d/j/dji_phantom4_drone_0.png",
       },
       price: 2000,
       location: "Cancun",
       country: "Mexico",
     },
     {
-      title: "Rustic Cabin by the Lake",
+      title: "Elevate V1 Drone",
       description:
-        "Spend your days fishing and kayaking on the serene lake. This cozy cabin is perfect for outdoor enthusiasts.",
+        "Packed with cutting-edge technology and intuitive features, the Elevate Drone empowers you to capture stunning visuals with ease, whether you're a seasoned pilot or just starting your aerial journey.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/61/11/96/6111968d03631abd06222588114ebf70.jpg",
       },
       price: 900,
       location: "Lake Tahoe",
       country: "United States",
     },
     {
-      title: "Luxury Penthouse with City Views",
+      title: "RescueOne R4",
       description:
-        "Indulge in luxury living with panoramic city views from this stunning penthouse apartment.",
+        "Developed to meet the rigorous standards of the United States Air Force, the IF1200 stands out as a leader in flight time and efficiency for industrial, commercial, and enterprise applications.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/c9/9c/09/c99c0954b64e2f6a3d2788cf0d0b445c.jpg",
       },
-      price: 3500,
+      price: 110000,
       location: "Los Angeles",
       country: "United States",
     },
     {
-      title: "Ski-In/Ski-Out Chalet",
+      title: "Ramokdu Drones",
       description:
-        "Hit the slopes right from your doorstep in this ski-in/ski-out chalet in the Swiss Alps.",
+        "4K Ultra Clear Camera, 5G FPV: Capture stunning images with a 4K camera and 5GHz FPV transmission up to 1968 ft. For optimal video quality, use an SD card.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/7d/49/f1/7d49f198823bb0041db1626f5a2ae0b4.jpg",
       },
-      price: 3000,
+      price: 12200,
       location: "Verbier",
       country: "Switzerland",
     },
     {
-      title: "Safari Lodge in the Serengeti",
+      title: "Guardian Hawk V3",
       description:
-        "Experience the thrill of the wild in a comfortable safari lodge. Witness the Great Migration up close.",
+        "Night Optics: Military grade Speed: 85 km/h GPS Jam-proof: Yes Heat Masking: Yes",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/af/ce/50/afce507273b9b80f8e054fcaf3202a26.jpg",
       },
-      price: 4000,
+      price: 9200,
       location: "Serengeti National Park",
       country: "Tanzania",
     },
     {
-      title: "Historic Canal House",
+      title: "Reaper Scout X",
       description:
-        "Stay in a piece of history in this beautifully preserved canal house in Amsterdam's iconic district.",
+        "Dual Armament Mounts (non-functional demo) Flight Time: 70 mins AI Auto Tracking: Yes Range: 20 km ",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/ba/3c/19/ba3c19b8caee7560e42730470d93627e.jpg",
       },
-      price: 1800,
+      price: 18000,
       location: "Amsterdam",
       country: "Netherlands",
     },
     {
-      title: "Private Island Retreat",
+      title: "Unmanned Aerial Vehicle -USA",
       description:
-        "Have an entire island to yourself for a truly exclusive and unforgettable vacation experience.",
+        "Model Name: SkyEye S100 Camera: 4K UHD with 3-axis gimbal stabilization Flight Time: 30 mins Range: 5 km Battery: 5200 mAh LiPo Speed: Max 50 km/h Payload: 1.2 kg Features: GPS + GLONASS, Auto Return, Obstacle Avoidance ",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1618140052121-39fc6db33972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9kZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/a7/33/1a/a7331a2fb6b84bb7ae9e0528271e108a.jpg",
       },
-      price: 10000,
+      price: 160000,
       location: "Fiji",
       country: "Fiji",
     },
     {
-      title: "Charming Cottage in the Cotswolds",
+      title: "AI Military Drone  ",
       description:
-        "Escape to the picturesque Cotswolds in this quaint and charming cottage with a thatched roof.",
+        "Model Name: FalconStrike M12 Camera: 8K optical + Night Vision + Thermal fusion Flight Time: 60 mins Range: 15 km Battery: 10000 mAh Dual Li-ion Speed: Max 80 km/h Payload: 5 kg Armor: Bullet-resistant shell (Kevlar composite) Features: AI Path Planning, Stealth Mode, Live Satellite Sync ",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1602088113235-229c19758e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhY2glMjB2YWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/7d/a5/ca/7da5ca460dd6a3d9bdcedc679670690c.jpg",
       },
-      price: 1200,
+      price: 3000000,
       location: "Cotswolds",
       country: "United Kingdom",
     },
     {
-      title: "Historic Brownstone in Boston",
+      title: "SkyWatcher X1",
       description:
-        "Step back in time in this elegant historic brownstone located in the heart of Boston.",
+        "Camera: 4K HD Range: 4.5 km Flight Time: 28 mins Battery: 4800 mAh Payload: 1.1 kg",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1533619239233-6280475a633a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/38/3e/7d/383e7d3e3c32e74a641b4b06cc588c84.jpg",
       },
-      price: 2200,
-      location: "Boston",
-      country: "United States",
-    },
-    {
-      title: "Beachfront Bungalow in Bali",
-      description:
-        "Relax on the sandy shores of Bali in this beautiful beachfront bungalow with a private pool.",
-      image: {
-        filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1602391833977-358a52198938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-      },
-      price: 1800,
-      location: "Bali",
-      country: "Indonesia",
-    },
-    {
-      title: "Mountain View Cabin in Banff",
-      description:
-        "Enjoy breathtaking mountain views from this cozy cabin in the Canadian Rockies.",
-      image: {
-        filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1521401830884-6c03c1c87ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-      },
-      price: 1500,
-      location: "Banff",
-      country: "Canada",
-    },
-    {
-      title: "Art Deco Apartment in Miami",
-      description:
-        "Step into the glamour of the 1920s in this stylish Art Deco apartment in South Beach.",
-      image: {
-        filename: "listingimage",
-        url: "https://plus.unsplash.com/premium_photo-1670963964797-942df1804579?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-      },
-      price: 1600,
-      location: "Miami",
-      country: "United States",
-    },
-    {
-      title: "Tropical Villa in Phuket",
-      description:
-        "Escape to a tropical paradise in this luxurious villa with a private infinity pool in Phuket.",
-      image: {
-        filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1470165301023-58dab8118cc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-      },
-      price: 3000,
+      price: 12000000,
       location: "Phuket",
       country: "Thailand",
     },
     {
-      title: "Historic Castle in Scotland",
+      title: "AeroScout 350",
       description:
-        "Live like royalty in this historic castle in the Scottish Highlands. Explore the rugged beauty of the area.",
+        "Camera: 2.7K with stabilization Range: 3 km Flight Time: 25 mins Features: Auto-return, Altitude hold.",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1585543805890-6051f7829f98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJlYWNoJTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/eb/ba/5f/ebba5f40e267000da268ea1458113d7e.jpg",
       },
-      price: 4000,
+      price: 1100900,
       location: "Scottish Highlands",
       country: "United Kingdom",
     },
     {
-      title: "Desert Oasis in Dubai",
+      title: "HawkEye V2",
       description:
-        "Experience luxury in the middle of the desert in this opulent oasis in Dubai with a private pool.",
+        "Camera: 1080p Range: 2 km Flight Time: 20 mins Special: Foldable design",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/86/de/e0/86dee01815ddc110aa5dfc7149748081.jpg",
       },
       price: 5000,
       location: "Dubai",
       country: "United Arab Emirates",
     },
     {
-      title: "Rustic Log Cabin in Montana",
+      title: "SkyZoom Lite",
       description:
-        "Unplug and unwind in this cozy log cabin surrounded by the natural beauty of Montana.",
+        "Camera: 4K wide-angle lens Range: 6 km Flight Time: 35 mins Extra: Follow Me mode",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1586375300773-8384e3e4916f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/04/c8/50/04c850169439a5221dd192a97f7faf5b.jpg",
       },
       price: 1100,
       location: "Montana",
       country: "United States",
     },
     {
-      title: "Beachfront Villa in Greece",
+      title: "FlyPro Scout",
       description:
-        "Enjoy the crystal-clear waters of the Mediterranean in this beautiful beachfront villa on a Greek island.",
+        "Camera: 4K + night mode Range: 5.2 km Battery: 5500 mAh Obstacle Avoidance: Yes",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmlsbGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/f0/54/cf/f054cf1c6ff476291325b47309f6895b.jpg",
       },
-      price: 2500,
+      price: 16000,
       location: "Mykonos",
       country: "Greece",
     },
     {
-      title: "Eco-Friendly Treehouse Retreat",
+      title: "FalconStrike M12",
       description:
-        "Stay in an eco-friendly treehouse nestled in the forest. It's the perfect escape for nature lovers.",
+        "Camera: 8K + Thermal + Night Vision Range: 15 km Armor: Kevlar shell Flight Time: 60 mins",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/aa/4e/60/aa4e605c7f271f5248b0767b85094bf9.jpg",
       },
-      price: 750,
+      price: 2000,
       location: "Costa Rica",
       country: "Costa Rica",
     },
     {
-      title: "Historic Cottage in Charleston",
+      title: "ThermoX T1",
       description:
-        "Experience the charm of historic Charleston in this beautifully restored cottage with a private garden.",
+        "Thermal Sensor: 320x240 Flight Time: 27 mins Range: 3.5 km Dual Camera: Yes",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvZGdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/95/14/03/9514030ddfd723fb2d4bd0c403bc41bf.jpg",
       },
       price: 1600,
       location: "Charleston",
       country: "United States",
     },
     {
-      title: "Modern Apartment in Tokyo",
+      title: "FireFly T5",
       description:
-        "Explore the vibrant city of Tokyo from this modern and centrally located apartment.",
+        "Thermal Camera: FLIR Lepton Visible Cam: 1080p Battery: 6000 mAh Detection: Heat zones & hotspots",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRva3lvfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/6e/6c/12/6e6c129f2219893a2cb516c4f2180428.jpg",
       },
-      price: 2000,
+      price: 6000,
       location: "Tokyo",
       country: "Japan",
     },
     {
-      title: "Lakefront Cabin in New Hampshire",
+      title: "HeatScope V8",
       description:
-        "Spend your days by the lake in this cozy cabin in the scenic White Mountains of New Hampshire.",
+        "Thermal Resolution: 640x480 Flight Time: 30 mins Payload: 1 kg AI Heatmap: Enabled",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1578645510447-e20b4311e3ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/8d/1d/1b/8d1d1b681366dd8cc90684a92757eb88.jpg",
       },
-      price: 1200,
+      price: 45000,
       location: "New Hampshire",
       country: "United States",
     },
     {
-      title: "Luxury Villa in the Maldives",
+      title: "TempVision 360",
       description:
-        "Indulge in luxury in this overwater villa in the Maldives with stunning views of the Indian Ocean.",
+        "Sensor: FLIR Duo Pro R Dual Video Stream: Yes Range: 4 km Live Analytics: Yes",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/1a/41/23/1a41233c4a87e38722d282335f6fe44f.jpg",
       },
       price: 6000,
       location: "Maldives",
       country: "Maldives",
     },
     {
-      title: "Ski Chalet in Aspen",
+      title: "NightSurge T9",
       description:
-        "Hit the slopes in style with this luxurious ski chalet in the world-famous Aspen ski resort.",
+        "Features: Thermal fusion + Night vision Max Speed: 40 km/h Flight Time: 33 mins Rugged Design: Weatherproof",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://i.pinimg.com/736x/e7/62/8b/e7628b5136175c08b1f369ed281f0cbc.jpg",
       },
-      price: 4000,
+      price: 100000,
       location: "Aspen",
       country: "United States",
     },
     {
-      title: "Secluded Beach House in Costa Rica",
+      title: "FireFly T5",
       description:
-        "Escape to a secluded beach house on the Pacific coast of Costa Rica. Surf, relax, and unwind.",
+        "Dual Armament Mounts (non-functional demo) Flight Time: 70 mins AI Auto Tracking: Yes Range: 20 km ",
       image: {
         filename: "listingimage",
-        url: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        url: "https://m.media-amazon.com/images/I/51UNpTjs6rS._SX425_.jpg',  filename: 'default-image",
       },
-      price: 1800,
+      price: 45000,
       location: "Costa Rica",
       country: "Costa Rica",
     },
