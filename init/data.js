@@ -5,7 +5,7 @@ const sampleListings = [
         "Type: Surveillance Battery: 5200 mAh Flight Time: 30 mins Use: Urban planning, real estate",
       image: {
         filename: "listingimage",
-        url: "https://i.pinimg.com/736x/1a/05/bc/1a05bc3a2ec7133a446da830c1be06ee.jpg'",
+        url: "https://i.pinimg.com/736x/1a/05/bc/1a05bc3a2ec7133a446da830c1be06ee.jpg",
       },
       price: 12000,
       location: "Malibu",
@@ -293,7 +293,7 @@ const sampleListings = [
         "Dual Armament Mounts (non-functional demo) Flight Time: 70 mins AI Auto Tracking: Yes Range: 20 km ",
       image: {
         filename: "listingimage",
-        url: "https://m.media-amazon.com/images/I/51UNpTjs6rS._SX425_.jpg',  filename: 'default-image",
+        url: "https://m.media-amazon.com/images/I/51UNpTjs6rS._SX425_.jpg",
       },
       price: 45000,
       location: "Costa Rica",

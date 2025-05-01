@@ -22,30 +22,30 @@
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation">
 
       <div>
-        <input name="listing[title]" type="text" value="<%= listing.title %>" placeholder="Enter Title" class="form-control" required> <br>
+        <input name="listing[title]" type="text" value="<%= listing.title %>" placeholder="Enter Title" class="form-control" required> 
         <div class="invalid-feedback">
           I Think App Kuch bhul Rahe Ho! 
         </div>
         <div class="valid-feedback">
           Good Choice !
         </div>
-      </div>
+      </div><br>
       
       
        <div>
-         <input name="listing[price]" type="number" value="<%= listing.price %>" placeholder="Enter Price" class="form-control"  required> <br>
+         <input name="listing[price]" type="number" value="<%= listing.price %>" placeholder="Enter Price" class="form-control"  required> 
          <div class="invalid-feedback">
           Hmm! Product Free Hie Shayad ? 
         </div>
         <div class="valid-feedback">
           Ameer Logzzzz!
         </div>
-       </div>
+       </div><br>
             <!-- <input name="listing[country]" type="text" value="<%= listing.country %>" placeholder="Days" class="form-control"> <br> -->
             <!-- <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Quantity" class="form-control"> <br> -->
             <!-- <input name="listing[location]" type="text" value="<%= listing.location %>" placeholder="Enter Delivery Date" class="form-control"> <br> -->
  <div>
-   <textarea name="listing[description]" placeholder="Enter Specifications" class="form-control"  required><%= listing.description %></textarea> <br>
+   <textarea name="listing[description]" placeholder="Enter Specifications" class="form-control"  required><%= listing.description %></textarea> 
    <div class="invalid-feedback">
     Hmm! chalo ab ye bee bata hee do kee kya kya chaiye drone main ? 
   </div>
@@ -53,19 +53,19 @@
     Wow!! kya choice hie 
   </div>
  </div>
-<div>
-  <input name="listing[image][url]" type="text" value="<%= listing.image %>" placeholder="Enter Image URL" class="form-control"  required> <br>
+<div><br>
+  <input name="listing[image][url]" type="text" value="<%= listing.image %>" placeholder="Enter Image URL" class="form-control"  required> 
   <div class="invalid-feedback">
     Hmm! Link to dete jayia muje ni pata wo kesa dihkta h ?  
   </div>
   <div class="valid-feedback">
    ye Mujper chod do !
   </div>
-</div>
+</div><br>
         <button type="submit" class="button">Update</button>
     </form>
-</div>
-</div>
+</div><br>
+</div><br>
 <script src="/js/script.js"></script>
 </body>
 
